@@ -1,9 +1,17 @@
-/* header */
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Import Fonts End*/
 
+/* Style for full page */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: white;  
 }
 
 header {
@@ -12,50 +20,22 @@ header {
     color: white;    
 }
 
-a {
-    text-decoration: none;
-    color: white;  
-}
-
-.header-container {
-    margin: 0 156px;
-}
-
-section.topbar {
-    display: grid;
-    grid-template-columns:  repeat(1, 1fr) 125px;
-    width: 95%;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-nav {
-    display: flex;
-}
-
-nav ul {
-    list-style: none;
-    padding-left: 0;
-    padding-right: 40px;
-}
-
-
-
 header h1 {
     font-size: 3em;
 }
 
-header h4 {
+h4 {
     background-color: rgba(224, 44, 109, 1);
     padding: 8px 25px;
     font-weight: 400;
 }
+/* Style for full page End*/
 
-section.top-header {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+/* Header Common Style */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin:0 70px;
 }
 
 section h1 {
@@ -66,6 +46,49 @@ section h1 {
 section.top-header h4 {
     width: 105px;
 }
+/* Header Common Style End*/
+
+
+/* Header TopBar Styling */
+section.topbar {
+    display: grid;
+    grid-template-columns:  repeat(1, 1fr) 125px;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 49px;
+}
+
+section.top-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+/* Nagation Styling */
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 40px;
+}
+/* Navigation Styling End */
+
+
+
+/* Animation & Transitions for Header Part */
+  @keyframes mymoveright {
+    from {left: 0px;}
+    to {left: 10px;}
+  }
+
+  @keyframes mymoveleft {
+    from {left: 0px;}
+    to {left: -10px;}
+  }
 
 .login-button:hover {
     transform: scale(120%);
@@ -76,13 +99,13 @@ section.top-header h4 {
     transition: width 5s;
 }
 
+.watch-button a {
+    position: relative;
+}
+
 .watch-button:hover .fa-arrow-right {
     animation: mymoveright 0.5s ease-in forwards;
     transform: scale(150%);
-}
-
-.watch-button a {
-    position: relative;
 }
 
 .watch-button:hover a {
@@ -90,31 +113,26 @@ section.top-header h4 {
     font-weight: 600;
     transform: scale(110%);
 }
-
-@keyframes mymoveright {
-    from {left: 0px;}
-    to {left: 10px;}
-  }
-
-  @keyframes mymoveleft {
-    from {left: 0px;}
-    to {left: -10px;}
-  }
+/* Animation & Transitions for Header Part End */
 
 header section img {
     width: 556px;
     height: 438px;
 }
+/* Header TopBar Styling End */
+
 
 .main-container {
     display:flex;
     flex-direction: column;
-    width:100%;
-    margin: 80px;
-    /* margin-left: 156px; */
+    width: 100%;
+    margin-top: 80px;
     justify-content: center;
+    align-items: center;
 }
 
+
+/* Player List Styling */
 .player-grid {
     width: 90%;
     display:grid;
@@ -138,4 +156,45 @@ header section img {
 }
 .player-list img {
     width: 100%;
+}
+/* Player List styling End */
+
+
+.highlightarea {
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    margin:0 80px;
+    align-items: center;
+}
+
+.highlight-text h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.highlight-text h4 {
+    color:white;
+    width: 110px;  
+}
+
+
+
+
+.highlightarea img {
+    width: 100%;
+}
+
+.footers {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons i {
+    padding: 25px 25px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.35);
+    margin: 15px 10px;
+    font-size: 20px;
 }
