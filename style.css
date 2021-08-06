@@ -105,3 +105,30 @@ header section img {
     width: 556px;
     height: 438px;
 }
+
+.main-container {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin: 80px;
+    /* margin-left: 156px; */
+    justify-content: center;
+}
+
+.player-grid {
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;    
+}
+
+.player-list {
+    width: 330px;
+    height: 474px;
+    box-shadow: 1px 20px rgba(108, 108, 108, 1);
+}
+
+main img {
+    width: 100%;
+}
