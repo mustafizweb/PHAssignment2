@@ -126,9 +126,16 @@ header section img {
 .player-list {
     width: 330px;
     height: 474px;
-    box-shadow: 1px 20px rgba(108, 108, 108, 1);
+    box-shadow: 2px 2px 20px rgb(196, 196, 196);
+    padding: 15px;
 }
 
-main img {
+.player-name {
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: 10px 0;
+    /* font */
+}
+.player-list img {
     width: 100%;
 }
