@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    width: 1440px;
+    width: 100%;
 }
 
 a {
@@ -77,8 +77,6 @@ nav ul {
 }
 /* Navigation Styling End */
 
-
-
 /* Animation & Transitions for Header Part */
   @keyframes mymoveright {
     from {left: 0px;}
@@ -121,7 +119,7 @@ header section img {
 }
 /* Header TopBar Styling End */
 
-
+/* Main Container */
 .main-container {
     display:flex;
     flex-direction: column;
@@ -130,7 +128,6 @@ header section img {
     justify-content: center;
     align-items: center;
 }
-
 
 /* Player List Styling */
 .player-grid {
@@ -152,14 +149,13 @@ header section img {
     font-weight: 700;
     font-size: 1.6em;
     margin: 10px 0;
-    /* font */
 }
 .player-list img {
     width: 100%;
 }
 /* Player List styling End */
 
-
+/* Highlights Area */
 .highlightarea {
     display: grid;    
     grid-template-columns: repeat(2, 1fr);
@@ -179,22 +175,83 @@ header section img {
     width: 110px;  
 }
 
-
-
+.highlight-text p {
+    width: 80%;  
+}
 
 .highlightarea img {
     width: 100%;
 }
+/* Highlights Area End */
 
+/* Contents for Score Summary and Player Ranking */
+.scoreboard {
+    width: 100%;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.726));
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+table {
+    text-align: center;
+    width: 80%;
+    border-collapse: separate;
+}
+
+table th, td{
+    background-color: rgb(255, 158, 174);
+    height: 2.5em;
+    color:black;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 5px solid rgb(14, 10, 10);
+}
+
+.achievements {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.achievements span {
+    padding: 0 100px;
+    width: 100%;
+    line-height: 0;
+}
+
+.score-highlight {
+    font-size: 5em;
+    font-weight: 900;
+
+}
+
+.score-title {    
+   margin-top: 0;
+   padding-top: 0;
+   color: rgb(212, 183, 19);
+}
+/* Contents for Score Summary and Player Ranking End*/
+/* Main Container End*/
+
+/* Footer Start */
 .footers {
     display: flex;
     justify-content: center;
 }
 
+.footers img {
+    transform: scale(80%);
+}
+
 .socialicons i {
     padding: 15px 15px;
     border-radius: 50%;
-    background-color: rgba(128, 128, 128, 0.35);
-    margin: 30px 25px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 10px 25px;
     font-size: 50px;
 }
+/* Footer End */
