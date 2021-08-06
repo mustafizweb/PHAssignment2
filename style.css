@@ -12,6 +12,11 @@ header {
     color: white;    
 }
 
+a {
+    text-decoration: none;
+    color: white;  
+}
+
 .header-container {
     margin: 0 156px;
 }
@@ -35,10 +40,7 @@ nav ul {
     padding-right: 40px;
 }
 
-nav ul a {
-    text-decoration: none;
-    color: white;  
-}
+
 
 header h1 {
     font-size: 3em;
@@ -50,13 +52,10 @@ header h4 {
     font-weight: 400;
 }
 
-
 section.top-header {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* justify-content: space-between; */
-    /* flex-direction: row; */
 }
 
 section h1 {
@@ -65,8 +64,41 @@ section h1 {
 }
 
 section.top-header h4 {
-    width: 115px;
+    width: 105px;
 }
+
+.login-button:hover {
+    transform: scale(120%);
+}
+
+.fa-arrow-right {
+    position: relative;
+    transition: width 5s;
+}
+
+.watch-button:hover .fa-arrow-right {
+    animation: mymoveright 0.5s ease-in forwards;
+    transform: scale(150%);
+}
+
+.watch-button a {
+    position: relative;
+}
+
+.watch-button:hover a {
+    animation: mymoveleft 0.5s ease-in forwards;
+    transform: scale(110%);
+}
+
+@keyframes mymoveright {
+    from {left: 0px;}
+    to {left: 10px;}
+  }
+
+  @keyframes mymoveleft {
+    from {left: 0px;}
+    to {left: -10px;}
+  }
 
 header section img {
     width: 556px;
